@@ -3,3 +3,56 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+main {
+    max-width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .content {
+        width: 70%;
+
+        article:first-child {
+            margin-top: 0;
+        }
+
+        article {
+            width: 100%;
+            margin: 20px 0;
+
+            .title {
+                font-size: 2em;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .aside {
+        width: 30%;
+        padding: 0 10px;
+
+        ul {
+            list-style: none;
+
+            li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+
+                img {
+                    width: 25%;
+                    object-fit: contain;
+                    border-radius: 10px;
+                }
+
+                p {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
